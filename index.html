@@ -1,0 +1,66 @@
+<!-- By `latest` tag -->
+<script type="module" src="https://1.www.s81c.com/common/carbon/web-components/tag/latest/accordion.min.js"></script>
+
+<!-- By specific version -->
+<script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v1.16.0/accordion.min.js"></script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/tag/latest/dropdown.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/tag/v1/latest/inline-loading.min.js"></script>
+    <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/themes.css" />
+    <script type="module" src="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/dotcom-shell.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/tag/v1/latest/leadspace.min.js"></script>
+    <style type="text/css">
+      // Suppresses the custom element until it has been defined
+      bx-dropdown:not(:defined),
+      bx-dropdown-item:not(:defined) {
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <bx-dropdown trigger-content="Select an item">
+        <bx-dropdown-item value="all">Option 1</bx-dropdown-item>
+        <bx-dropdown-item value="cloudFoundry">Option 2</bx-dropdown-item>
+        <bx-dropdown-item value="staging">Option 3</bx-dropdown-item>
+        <bx-dropdown-item value="dea">Option 4</bx-dropdown-item>
+        <bx-dropdown-item value="router">Option 5</bx-dropdown-item>
+      </bx-dropdown>
+    </div>
+    <div id="app">
+<h1>>_</h1>
+<dds-dotcom-shell-container>
+    <main>
+        <dds-leadspace size="medium" class="dds-theme-zone-g100">
+          <dds-leadspace-heading>LeadSpace</dds-leadspace-heading>
+          LeadSpace copy
+          <dds-button-group slot="action">
+            <dds-button-group-item href="www.example.com">
+              Button 1
+              <svg
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                aria-hidden="true"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                slot="icon"
+              >
+                <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+              </svg>
+            </dds-button-group-item>
+          </dds-button-group>
+          <dds-leadspace-image slot="image" class="bx--image" alt="alt text" default-src="https://picsum.photos/id/1076/1056/480">
+            <dds-image-item media="(min-width: 672px)" srcset="https://picsum.photos/id/1076/672/400"></dds-image-item>
+            <dds-image-item media="(min-width: 0)" srcset="https://picsum.photos/id/1076/320/370"></dds-image-item>
+          </dds-leadspace-image>
+        </dds-leadspace>
+    </main>
+</dds-dotcom-shell-container>
+<bx-inline-loading status=INLINE_LOADING_STATE>Loading data...</bx-inline-loading>
+  </body>
+</html>
